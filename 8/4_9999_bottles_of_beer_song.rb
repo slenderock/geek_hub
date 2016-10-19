@@ -113,7 +113,9 @@ def englishNumber number
 end
 
 number_of_buttons = 99
-puts "#{englishNumber(number_of_buttons) } bottles of beer on the wall"
-puts "#{englishNumber(number_of_buttons) } bottles of beer!"
-puts 'Take one down, pass it around'
-puts "#{englishNumber(number_of_buttons -= 1) } bottles of beer on the wall!\n\n"
+while number_of_buttons>0
+  puts "#{englishNumber(number_of_buttons) } bottles of beer on the wall"
+  puts "#{englishNumber(number_of_buttons) } bottles of beer!"
+  puts 'Take one down, pass it around'
+  puts "#{englishNumber(number_of_buttons -= 1) } bottles of beer on the wall!\n\n"
+end
